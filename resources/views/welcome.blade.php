@@ -12,48 +12,20 @@
 </head>
 <body>
 
-  <div class="lg:flex min-h-screen">
-    {{-- left side image --}}
-    <div class="w-full lg:w-1/2 h-56 lg:h-auto bg-black">
-      <img src="https://images.unsplash.com/photo-1595234235838-2fc8984bc651?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80" class="h-full w-full object-cover" />
-    </div>
-
-    {{-- right side content --}}
-    <div class="prose w-full lg:w-1/2 flex flex-col justify-center p-12">
-      <h2>Welcome to Your Laravel API</h2>
-
-      <p>This is a sample <a href="https://laravel.com/">Laravel</a> API to deploy to <a href="https://digitalocean.com">DigitalOcean</a>. It is a REST API to CRUD (<span class="text-green-400">C</span>reate, <span class="text-green-400">R</span>ead, <span class="text-green-400">U</span>pdate, <span class="text-green-400">D</span>elete) blog posts.</p>
-
-      <h3>Getting Started</h3>
-
-      <ol>
-        <li>Create your own .env file (copy .env.example)</li>
-        <li>Generate your key: <code>php artisan key:generate</code></li>
-        <li>Fill out your own database credentials</li>
-        <li>Run migrations: <code>php artisan migrate</code></li>
-        <li>Seed the database: <code>php artisan db:seed</code></li>
-        <li>Test the API w/ <a href="https://www.postman.com/">POSTman</a> or <a href="https://insomnia.rest/">Insomnia</a></li>
-      </ol>
-
-      <h3>Functionality and Routes</h3>
-
-      <ul>
-        <li>View all blog posts: <a href="{{ route('posts.index') }}"><span class="text-red-400">GET</span> /api/posts</a></li>
-        <li>Create a blog post: <span class="text-red-400">POST</span> /api/posts</li>
-        <li>Show a single blog post: <a href="{{ route('posts.show', ['post' => 1]) }}"><span class="text-red-400">GET</span> /api/posts/1</a></li>
-        <li>Update a blog post: <span class="text-red-400">PUT/PATCH</span> /api/posts/1</li>
-        <li>Delete a blog post: <span class="text-red-400">DELETE</span> /api/posts/1</li>
-      </ul>
-
-      <h3>Important Files to Read Through</h3>
-
-      <ul>
-        <li>Routes: <code>routes/api.php</code></li>
-        <li>Migrations: <code>database/migrations/</code></li>
-        <li>Models: <code>app/Post.php</code></li>
-        <li>Controllers: <code>app/Http/Controllers/PostController.php</code></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
     </div>
   </div>
+</nav>
+
 </body>
 </html>
